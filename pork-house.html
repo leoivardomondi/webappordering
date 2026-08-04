@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pork House Specials - Afi Steaks &amp; Platters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body class="menu-page-body">
+
+    <header class="top-navbar">
+        <div class="nav-container">
+            <div class="nav-logo-wrap">
+                <a href="index.html" style="display: inline-flex; align-items: center;">
+                    <img src="images/attached-brand-logo-1.png" alt="Afi Steaks &amp; Platters Logo" class="nav-brand-logo-1" fetchpriority="high" decoding="async">
+                </a>
+                <span class="nav-brand-x">X</span>
+                <a href="events.html" style="display: inline-flex; align-items: center;">
+                    <img src="images/afiboardroom (1).png" alt="Afi The Boardroom Emblem" class="nav-brand-logo-2" fetchpriority="high" decoding="async">
+                </a>
+            </div>
+            <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <nav class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="menu.html" class="active">MENU</a>
+                <a href="index.html#branches">BRANCHES</a>
+                <a href="index.html#events">EVENTS &amp; ROOMS</a>
+                <a href="index.html#butchery">BUTCHERY</a>
+            </nav>
+            <div class="nav-icons-wrapper">
+                <div class="nav-icons">
+                    <a href="cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></a>
+                </div>
+                <label for="mobile-menu-toggle" class="mobile-menu-button" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero" style="background-image: url('images/real_photos/dsc_5452.jpg');">
+        <div class="hero-overlay"><h1>PORK HOUSE SPECIALS</h1></div>
+    </section>
+
+    <main class="menu-content">
+        <div class="breadcrumbs">
+            <a href="menu.html">MENU</a>
+            <span class="separator">&gt;</span>
+            <span class="current">PORK HOUSE SPECIALS</span>
+        </div>
+
+        <section class="item-grid product-grid">
+
+            <div class="product-item">
+                <div class="food-card-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="HONEY GLAZED PORK BELLY" loading="lazy" decoding="async"></div>
+                <h4>HONEY GLAZED PORK BELLY</h4>
+                <p class="price">KES 1,150</p>
+                <button type="button" class="btn-order js-add-to-cart" data-product-title="Honey Glazed Pork Belly" data-product-price="1150" data-product-image="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">ADD TO CART</button>
+            </div>
+
+            <div class="product-item">
+                <div class="food-card-img"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="AFI PORK CHOMA (1/2 KG)" loading="lazy" decoding="async"></div>
+                <h4>AFI PORK CHOMA (1/2 KG)</h4>
+                <p class="price">KES 980</p>
+                <button type="button" class="btn-order js-add-to-cart" data-product-title="Afi Pork Choma (1/2 kg)" data-product-price="980" data-product-image="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">ADD TO CART</button>
+            </div>
+
+            <div class="product-item">
+                <div class="food-card-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="SPICY PORK FRY" loading="lazy" decoding="async"></div>
+                <h4>SPICY PORK FRY</h4>
+                <p class="price">KES 1,050</p>
+                <button type="button" class="btn-order js-add-to-cart" data-product-title="Spicy Pork Fry" data-product-price="1050" data-product-image="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">ADD TO CART</button>
+            </div>
+
+            <div class="product-item">
+                <div class="food-card-img"><img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="SLATHERED BBQ PORK RIBS" loading="lazy" decoding="async"></div>
+                <h4>SLATHERED BBQ PORK RIBS</h4>
+                <p class="price">KES 1,380</p>
+                <button type="button" class="btn-order js-add-to-cart" data-product-title="Slathered BBQ Pork Ribs" data-product-price="1380" data-product-image="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">ADD TO CART</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="social-news-container">
+                <div class="social-icons">
+                    <a href="https://facebook.com/AfiPorkHouse" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/afi.steaks.and.platters" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Afi Steaks &amp; Platters. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

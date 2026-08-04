@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetups & Special Moments Packages | Afi Steaks & Platters</title>
+    <meta name="description" content="Book Afi Steaks & Platters event packages for birthdays, date nights, anniversaries, graduations, team building, and bridal showers. Duo Delight, Fiesta 5, Social 10 & Grand 15 Plus packages.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        .package-card {
+            background: #181818;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .package-card:hover {
+            transform: translateY(-6px);
+            border-color: #C8102E;
+            box-shadow: 0 10px 30px rgba(200, 16, 46, 0.25);
+        }
+        .package-card.featured {
+            border: 2px solid #C8102E;
+            background: linear-gradient(180deg, #221215 0%, #181818 100%);
+        }
+        .package-badge {
+            position: absolute;
+            top: -14px;
+            right: 20px;
+            background: #C8102E;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .package-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #C8102E;
+            font-weight: 800;
+            margin: 12px 0 16px 0;
+        }
+        .package-price span {
+            font-size: 14px;
+            color: #a0a0a0;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+        }
+        .package-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+            flex: 1;
+        }
+        .package-features li {
+            color: #d0d0d0;
+            font-size: 14px;
+            padding: 8px 0;
+            border-bottom: 1px solid #262626;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .package-features li i {
+            color: #C8102E;
+            font-size: 14px;
+        }
+        .perks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .perk-box {
+            background: #1e1e1e;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .perk-box i {
+            font-size: 28px;
+            color: #C8102E;
+            margin-bottom: 12px;
+        }
+        .perk-box h4 {
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .perk-box p {
+            font-size: 13px;
+            color: #a0a0a0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body class="menu-page-body">
+
+    <!-- TOP NAVIGATION -->
+    <header class="top-navbar">
+        <div class="nav-container">
+            <div class="nav-logo-wrap">
+                <a href="index.html" style="display: inline-flex; align-items: center;">
+                    <img src="images/attached-brand-logo-1.png" alt="Afi Steaks &amp; Platters Logo" class="nav-brand-logo-1" fetchpriority="high" decoding="async">
+                </a>
+                <span class="nav-brand-x">X</span>
+                <a href="events.html" style="display: inline-flex; align-items: center;">
+                    <img src="images/afiboardroom (1).png" alt="Afi The Boardroom Emblem" class="nav-brand-logo-2" fetchpriority="high" decoding="async">
+                </a>
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="events-packages.html" class="active">EVENT PACKAGES</a>
+                <a href="catering.html">OUTSIDE CATERING</a>
+                <a href="index.html#branches">BRANCHES</a>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="menu-content">
+        <!-- WELCOME HEADER -->
+        <section class="welcome-header">
+            <span style="color: #C8102E; font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: 2px;">CELEBRATE IN STYLE</span>
+            <h1>Meetups & Special Moments Packages</h1>
+            <p>Birthdays, Date Nights, Surprises, Anniversaries, Graduations, Team Building, Bridal Showers &amp; Parties in General. Enjoy feast platters and VIP party complimentary perks!</p>
+        </section>
+
+        <!-- 4 PACKAGES GRID -->
+        <h2 style="font-family: 'Playfair Display', serif; text-align: center; color: #fff; margin-bottom: 30px; font-size: 28px;">Choose Your Event Package</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 50px;">
+            
+            <!-- Package 1: Duo Delight -->
+            <div class="package-card">
+                <h3 style="font-size: 20px; color: #fff; margin-bottom: 4px;">DUO DELIGHT</h3>
+                <span style="font-size: 12px; color: #a0a0a0; text-transform: uppercase; font-weight: 700;">2 PAX FEAST</span>
+                <div class="package-price">KES 3,000 <span>/ package</span></div>
+                <ul class="package-features">
+                    <li><i class="fa-solid fa-check"></i> 1/2 kg Mbuzi Choma</li>
+                    <li><i class="fa-solid fa-check"></i> 1/2 kg Chicken Choma</li>
+                    <li><i class="fa-solid fa-check"></i> French Fries / Chips</li>
+                    <li><i class="fa-solid fa-check"></i> Sauteed Potatoes</li>
+                    <li><i class="fa-solid fa-check"></i> 2 Craft Beverages</li>
+                </ul>
+                <a href="https://wa.me/254791306821?text=Hello%20Afi%20House,%20I%20would%20like%20to%20book%20the%20Duo%20Delight%20Package%20(KES%203,000)" target="_blank" style="display: block; width: 100%; padding: 12px; text-align: center; background: #C8102E; color: white; font-weight: 700; border-radius: 6px; text-decoration: none;">
+                    <i class="fa-brands fa-whatsapp"></i> BOOK DUO DELIGHT
+                </a>
+            </div>
+
+            <!-- Package 2: Fiesta 5 -->
+            <div class="package-card featured">
+                <span class="package-badge">POPULAR</span>
+                <h3 style="font-size: 20px; color: #fff; margin-bottom: 4px;">FIESTA 5</h3>
+                <span style="font-size: 12px; color: #a0a0a0; text-transform: uppercase; font-weight: 700;">5 PAX GROUP FEAST</span>
+                <div class="package-price">KES 5,500 <span>/ package</span></div>
+                <ul class="package-features">
+                    <li><i class="fa-solid fa-check"></i> 1 kg Pork Choma</li>
+                    <li><i class="fa-solid fa-check"></i> 1 kg Chicken Choma</li>
+                    <li><i class="fa-solid fa-check"></i> 1 kg Mbuzi Choma</li>
+                    <li><i class="fa-solid fa-check"></i> 2 Chips &amp; Sauteed Potatoes</li>
+                    <li><i class="fa-solid fa-check"></i> Ugali &amp; 2 Kachumbari</li>
+                    <li><i class="fa-solid fa-check"></i> 2 Soda (2 Liters)</li>
+                </ul>
+                <a href="https://wa.me/254791306821?text=Hello%20Afi%20House,%20I%20would%20like%20to%20book%20the%20Fiesta%205%20Package%20(KES%205,500)" target="_blank" style="display: block; width: 100%; padding: 12px; text-align: center; background: #C8102E; color: white; font-weight: 700; border-radius: 6px; text-decoration: none;">
+                    <i class="fa-brands fa-whatsapp"></i> BOOK FIESTA 5
+                </a>
+            </div>
+
+            <!-- Package 3: Social 10 -->
+            <div class="package-card">
+                <h3 style="font-size: 20px; color: #fff; margin-bottom: 4px;">SOCIAL 10</h3>
+                <span style="font-size: 12px; color: #a0a0a0; text-transform: uppercase; font-weight: 700;">10 PAX PARTY</span>
+                <div class="package-price">KES 10,000 <span>/ package</span></div>
+                <ul class="package-features">
+                    <li><i class="fa-solid fa-check"></i> 2 kg Pork Choma</li>
+                    <li><i class="fa-solid fa-check"></i> 1 kg Chicken Choma</li>
+                    <li><i class="fa-solid fa-check"></i> 2 kg Mbuzi Choma</li>
+                    <li><i class="fa-solid fa-check"></i> 2 Chips &amp; 2 Sauteed Potatoes</li>
+                    <li><i class="fa-solid fa-check"></i> 2 Ugali &amp; 2 Kachumbari</li>
+                    <li><i class="fa-solid fa-check"></i> 2 Soda (2 Liters)</li>
+                </ul>
+                <a href="https://wa.me/254791306821?text=Hello%20Afi%20House,%20I%20would%20like%20to%20book%20the%20Social%2010%20Package%20(KES%2010,000)" target="_blank" style="display: block; width: 100%; padding: 12px; text-align: center; background: #C8102E; color: white; font-weight: 700; border-radius: 6px; text-decoration: none;">
+                    <i class="fa-brands fa-whatsapp"></i> BOOK SOCIAL 10
+                </a>
+            </div>
+
+            <!-- Package 4: Grand 15 Plus -->
+            <div class="package-card">
+                <h3 style="font-size: 20px; color: #fff; margin-bottom: 4px;">GRAND 15 PLUS</h3>
+                <span style="font-size: 12px; color: #a0a0a0; text-transform: uppercase; font-weight: 700;">15 PAX + MEGA PARTY</span>
+                <div class="package-price">KES 15,000 <span>/ package</span></div>
+                <ul class="package-features">
+                    <li><i class="fa-solid fa-check"></i> 3 kg Pork Choma</li>
+                    <li><i class="fa-solid fa-check"></i> 2 kg Chicken Choma</li>
+                    <li><i class="fa-solid fa-check"></i> 3 kg Mbuzi Choma</li>
+                    <li><i class="fa-solid fa-check"></i> 4 Chips &amp; 4 Sauteed Potatoes</li>
+                    <li><i class="fa-solid fa-check"></i> 4 Ugali &amp; 4 Kachumbari</li>
+                    <li><i class="fa-solid fa-check"></i> 3 Soda (2 Liters)</li>
+                </ul>
+                <a href="https://wa.me/254791306821?text=Hello%20Afi%20House,%20I%20would%20like%20to%20book%20the%20Grand%2015%20Plus%20Package%20(KES%2015,000)" target="_blank" style="display: block; width: 100%; padding: 12px; text-align: center; background: #C8102E; color: white; font-weight: 700; border-radius: 6px; text-decoration: none;">
+                    <i class="fa-brands fa-whatsapp"></i> BOOK GRAND 15 PLUS
+                </a>
+            </div>
+        </div>
+
+        <!-- COMPLIMENTARY PERKS SECTION -->
+        <section style="background: #181818; border: 1px solid #2a2a2a; border-radius: 12px; padding: 32px; margin-bottom: 50px;">
+            <div style="text-align: center; margin-bottom: 24px;">
+                <span style="color: #C8102E; font-weight: 800; font-size: 12px; text-transform: uppercase;">INCLUDED FOR FREE</span>
+                <h2 style="font-family: 'Playfair Display', serif; color: #fff; font-size: 26px; margin-top: 4px;">Free Event Complementaries</h2>
+            </div>
+
+            <div class="perks-grid">
+                <div class="perk-box">
+                    <i class="fa-solid fa-sax-hot"></i>
+                    <h4>Personalised Sax Performance</h4>
+                    <p>Live Saxophone music performance included <strong>free on Thursdays</strong> to set the perfect mood.</p>
+                </div>
+                <div class="perk-box">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <h4>Cake Parade &amp; Flairs</h4>
+                    <p>Grand celebratory cake presentation with pyrotechnic flairs, strobe lights &amp; custom music entrance.</p>
+                </div>
+                <div class="perk-box">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <h4>VIP Reservations &amp; Parking</h4>
+                    <p>Priority table placement, custom name board, dedicated waiter, and reserved VIP parking space.</p>
+                </div>
+                <div class="perk-box">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <h4>Photos &amp; Video Support</h4>
+                    <p>Capture your special moments with our event surprise elements, party games, and photo setups.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADD-ON OPTIONS -->
+        <section style="background: #1a1a1a; border-left: 4px solid #C8102E; border-radius: 8px; padding: 24px; margin-bottom: 50px;">
+            <h3 style="color: #fff; font-size: 20px; margin-bottom: 12px;"><i class="fa-solid fa-gift" style="color: #C8102E; margin-right: 8px;"></i> Available Add-Ons (At Extra Cost)</h3>
+            <p style="color: #b0b0b0; font-size: 14px; line-height: 1.6;">
+                Custom Celebration Cakes &bull; Fresh Flower Bouquets &bull; Gourmet Chocolates &bull; Personalised Love / Birthday Notes &bull; Afi Gift Shopping Cards &bull; Premium Soft &amp; Craft Beverage Selection &bull; Additional Food &amp; Meat Platter Additions.
+            </p>
+            <div style="margin-top: 18px;">
+                <a href="tel:0791306821" style="display: inline-flex; align-items: center; gap: 8px; background: #C8102E; color: white; padding: 10px 20px; font-weight: 700; border-radius: 50px; text-decoration: none; font-size: 13px;">
+                    <i class="fa-solid fa-phone"></i> CALL EVENT COORDINATOR
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="background: #0f0f0f; border-top: 1px solid #222; padding: 40px 5%; text-align: center; color: #888; font-size: 14px;">
+        <p>&copy; 2026 Afi Steaks &amp; Platters. All Rights Reserved. | Experience authentic Kenyan grill mastercraft.</p>
+    </footer>
+
+</body>
+</html>

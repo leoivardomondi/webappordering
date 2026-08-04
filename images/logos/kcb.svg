@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+    <rect x="0" y="5" width="220" height="50" rx="6" fill="#00843D"/>
+    <!-- Lion Emblem -->
+    <path d="M 18 18 L 32 18 L 38 25 L 32 32 L 35 42 L 25 36 L 15 42 L 18 32 L 12 25 Z" fill="#FFC72C"/>
+    <text x="48" y="39" font-family="'Lato', Arial, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" letter-spacing="1.5">KCB</text>
+    <text x="114" y="39" font-family="'Lato', Arial, sans-serif" font-size="20" font-weight="800" fill="#FFC72C" letter-spacing="1">BANK</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <!-- KCB Lime Green Background -->
+  <rect x="0" y="0" width="240" height="80" rx="4" fill="#86BC25"/>
+  
+  <!-- Dark Navy Blue Lion Silhouette Block on the Left -->
+  <g transform="translate(32, 2)">
+    <!-- Dark Navy Container Block -->
+    <path d="M 0 0 H 68 V 76 H 0 Z" fill="#0D2040"/>
+    <!-- Detailed Lion Silhouette cutouts in Lime Green -->
+    <!-- Crown / Mane top details -->
+    <path d="M 12 12 Q 22 2, 36 10 Q 48 18, 56 12 Q 62 16, 54 24 Q 44 26, 38 20 Q 30 24, 22 18 Z" fill="#86BC25"/>
+    <path d="M 24 22 C 32 16, 42 22, 48 26 C 54 30, 62 26, 58 34 C 50 36, 42 32, 34 36 Z" fill="#86BC25"/>
+    <!-- Eyes and Snout cutouts -->
+    <ellipse cx="36" cy="34" rx="4" ry="3" fill="#86BC25"/>
+    <ellipse cx="50" cy="34" rx="4" ry="3" fill="#86BC25"/>
+    <path d="M 38 42 Q 44 48, 50 42 Q 46 54, 38 52 Z" fill="#86BC25"/>
+    <!-- Chin and Mane lower details -->
+    <path d="M 22 48 Q 30 46, 34 54 Q 28 62, 20 56 Z" fill="#86BC25"/>
+    <path d="M 28 58 Q 38 56, 42 66 Q 34 72, 26 64 Z" fill="#86BC25"/>
+    <path d="M 40 62 Q 52 58, 58 68 Q 48 74, 38 70 Z" fill="#86BC25"/>
+  </g>
+  
+  <!-- Bold White KCB Typography -->
+  <text x="105" y="58" font-family="'Trebuchet MS', 'Arial Black', sans-serif" font-size="46" font-weight="900" fill="#FFFFFF" letter-spacing="1">KCB</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+    <!-- Wave Icon -->
+    <path d="M 10 25 C 20 15 30 35 40 25 M 10 35 C 20 25 30 45 40 35" stroke="#00A8B5" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="50" y="32" font-family="'Lato', Arial, sans-serif" font-size="20" font-weight="900" fill="#0A2540" letter-spacing="1">TWO RIVERS</text>
+    <text x="50" y="48" font-family="'Lato', Arial, sans-serif" font-size="13" font-weight="700" fill="#C8102E" letter-spacing="4">MALL &amp; HUB</text>
+</svg>

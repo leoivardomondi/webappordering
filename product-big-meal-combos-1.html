@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG MEAL COMBOS HOUSE PLATE - Afi Steaks & Platters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body class="menu-page-body">
+
+    <header class="top-navbar">
+        <div class="nav-container">
+            <div class="nav-logo-wrap">
+                <a href="index.html" style="display: inline-flex; align-items: center;">
+                    <img src="images/attached-brand-logo-1.png" alt="Afi Steaks &amp; Platters Logo" class="nav-brand-logo-1" fetchpriority="high" decoding="async">
+                </a>
+                <span class="nav-brand-x">X</span>
+                <a href="events.html" style="display: inline-flex; align-items: center;">
+                    <img src="images/afiboardroom (1).png" alt="Afi The Boardroom Emblem" class="nav-brand-logo-2" fetchpriority="high" decoding="async">
+                </a>
+            </div>
+            <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <nav class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="menu.html" class="active">MENU</a>
+                <a href="#">FEATURED PRODUCTS</a>
+                <a href="#">DEALS</a>
+            </nav>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></a>
+                <a href="#" class="user-icon"><i class="fa-solid fa-user-circle"></i></a>
+            </div>
+            <label for="mobile-menu-toggle" class="mobile-menu-button" aria-label="Open menu"><span></span><span></span><span></span></label>
+        </div>
+    </header>
+
+    <main class="menu-content product-detail-content">
+        <div class="breadcrumbs">
+            <a href="menu.html">MENU</a>
+            <span class="separator">&gt;</span>
+            <a href="big-meals.html">GENEROUS BIG MEALS</a>
+            <span class="separator">&gt;</span>
+            <a href="big-meal-combos.html">BIG MEAL COMBOS</a>
+            <span class="separator">&gt;</span>
+            <span class="current">BIG MEAL COMBOS HOUSE PLATE</span>
+        </div>
+        <section class="product-detail-layout">
+            <div class="product-detail-image">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="BIG MEAL COMBOS HOUSE PLATE" loading="lazy" decoding="async">
+            </div>
+            <div class="product-detail-panel">
+                <p class="product-eyebrow">GENEROUS BIG MEALS</p>
+                <h1>BIG MEAL COMBOS HOUSE PLATE</h1>
+                <p class="product-description">BIG MEAL COMBOS HOUSE PLATE is a generous meal from our big meal combos selection, served hot with a satisfying restaurant-style finish.</p>
+                <p class="detail-price">KSH 950</p>
+
+                <div class="option-group">
+                    <h3>CHOICE OF SIDE</h3>
+                    <label class="option-select-label" for="choice-of-side-0">Select the option</label>
+                    <select id="choice-of-side-0" class="option-select">
+                        <option>Fries</option><option>Rice</option><option>Garden Salad</option>
+                    </select>
+                    <div class="option-chips">
+                        <span>Fries</span><span>Rice</span><span>Garden Salad</span>
+                    </div>
+                </div>
+                <div class="option-group">
+                    <h3>SAUCE OPTION</h3>
+                    <label class="option-select-label" for="sauce-option-0">Select the option</label>
+                    <select id="sauce-option-0" class="option-select">
+                        <option>BBQ Sauce</option><option>Garlic Sauce</option><option>Chilli Sauce</option>
+                    </select>
+                    <div class="option-chips">
+                        <span>BBQ Sauce</span><span>Garlic Sauce</span><span>Chilli Sauce</span>
+                    </div>
+                </div>
+                <div class="quantity-row">
+                    <span>Quantity</span>
+                    <div class="quantity-control">
+                        <button type="button" aria-label="Decrease quantity">-</button>
+                        <input type="number" value="1" min="1" aria-label="Quantity">
+                        <button type="button" aria-label="Increase quantity">+</button>
+                    </div>
+                </div>
+                <div class="detail-actions">
+                    <button type="button" class="btn-detail-primary js-add-to-cart" data-product-title="BIG MEAL COMBOS HOUSE PLATE" data-product-price="950" data-product-image="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" data-product-url="product-big-meal-combos-1.html">ADD TO ORDER</button>
+                    <button type="button" class="btn-detail-secondary js-add-to-favourite" data-product-title="BIG MEAL COMBOS HOUSE PLATE" data-product-price="950" data-product-image="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" data-product-url="product-big-meal-combos-1.html">ADD TO FAVOURITE</button>
+                </div>
+                <p class="availability-note">Breakfast products are available before 12PM only. Generous Big Meal products are available after 11AM only.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.quantity-control').forEach((control) => {
+            const input = control.querySelector('input');
+            const buttons = control.querySelectorAll('button');
+            buttons[0].addEventListener('click', () => {
+                input.value = Math.max(1, Number(input.value || 1) - 1);
+            });
+            buttons[1].addEventListener('click', () => {
+                input.value = Number(input.value || 1) + 1;
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="footer-top">
+            <div class="social-news-container">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>Join our exclusive list</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email address">
+                    <button type="submit" class="btn-outline">Subscribe</button>
+                </form>
+                <p class="disclaimer">By clicking "SUBSCRIBE" I agree to receive news, promotions, and offers from Beverages &.</p>
+            </div>
+            <div class="awards-container">
+                <div class="award-badge"><i class="fa-solid fa-beverages-"></i><span>Sommelier Choice</span></div>
+                <div class="award-badge"><i class="fa-solid fa-star"></i><span>Michelin Guide</span></div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="col contact-col">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li><a href="tel:0725072135">0725 072135</a></li>
+                </ul>
+            </div>
+            <div class="col locations-col">
+                <h3>LOCATIONS</h3>
+                <ul class="location-list">
+                    <li>Westlands</li>
+                    <li>Parklands</li>
+                    <li>Nyari</li>
+                    <li>Kileleshwa</li>
+                    <li style="font-style: italic; opacity: 0.7;">Coming soon</li>
+                </ul>
+            </div>
+            <div class="col menu-col">
+                <h3>OUR MENU</h3>
+                <ul>
+                    <li><a href="breakfast.html">BREAKFAST</a></li>
+                    <li><a href="drinks.html">DRINKS</a></li>
+                    <li><a href="big-meals.html">MAINS</a></li>
+                    <li><a href="desserts.html">DESSERTS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Experience the finest selection of beverages and dining. All visuals are serving suggestions only. Prices inclusive of VAT.</p>
+            <div class="bottom-links"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Contact Us</a></div>
+            <p class="copyright">&copy; 2026 Beverages &. All Rights Reserved</p>
+        </div>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
